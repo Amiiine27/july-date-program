@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types'
 import ICalButton from './iCal.jsx'
 
-function Card({ img, alt, title, desc, lieu, descr, loc, jour, heureD, heureF, DDB, DDF }) {
+function Card({ img, alt, title, desc, descr, loc, jour, DDB, DDF }) {
   return (
     <div className="card">
         <h3 className="card-title">{title}</h3>
@@ -10,7 +10,7 @@ function Card({ img, alt, title, desc, lieu, descr, loc, jour, heureD, heureF, D
         <p>{jour} Juillet 2024</p>
         <p className="card-description">{desc}</p>
 
-        <ICalButton title={title} lieu={lieu} descr={descr} loc={loc} DDB={DDB} DDF={DDF}/>
+        <ICalButton title={title} descr={descr} loc={loc} DDB={DDB} DDF={DDF}/>
     </div>
   );
 }

@@ -2,12 +2,12 @@ import React from 'react';
 import './ical.css'; // Importez le fichier CSS
 import ical from './assets/iCal.png'
 
-const ICalButton = ({ title, desc, loc, DDB, DDF }) => {
+const ICalButton = ({ title, descr, loc, DDB, DDF }) => {
   const handleDownload = () => {
     // Définir les détails de l'événement
     const event = {
       title: title,
-      description: desc,
+      description: descr,
       location: loc,
       startTime: `${DDB}`, // Format : YYYYMMDDTHHmmssZ
       endTime: `${DDF}`,
