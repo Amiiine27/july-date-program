@@ -1,6 +1,6 @@
 import React from 'react';
-import './ical.css'; // Importez le fichier CSS
-import ical from './assets/iCal.png'
+import '../Style/ical.css'; // Importez le fichier CSS
+import ical from '../assets/iCal.png'
 
 const ICalButton = ({ title, descr, loc, DDB, DDF }) => {
   const handleDownload = () => {

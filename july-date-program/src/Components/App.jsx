@@ -1,9 +1,8 @@
-import './App.css'
 import Card from './Card'
-import './Card.css'
-import MRSPC from "./assets/MRSPC.jpg"
-import TFL from "./assets/TFL.jpeg"
-import ATL from "./assets/ATL.jpg"
+import '../Style/Card.css'
+import MRSPC from "../assets/MRSPC.jpg"
+import TFL from "../assets/TFL.jpeg"
+import ATL from "../assets/ATL.jpg"
 import ICalButton from './iCal.jsx'
 
 function App() {
