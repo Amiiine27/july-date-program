@@ -4,15 +4,28 @@ import './Card.css'
 import MRSPC from "./assets/MRSPC.jpg"
 import TFL from "./assets/TFL.jpeg"
 import ATL from "./assets/ATL.jpg"
+import ICalButton from './iCal.jsx'
+
 
 
 function App() {
+  const formattage = (jour, heure) => {
+      return `202407${jour}T${String(heure).padStart(2, '0')}0000Z`
+  }
+
   return (
     <>
       <Card img={MRSPC} 
             alt="Image représentative du Musée de l'Air et de l'Espace" 
             title="Musée de l'Air et de l'Espace" 
-            desc="Le musée de l'Air et de l'Espace du Bourget est le plus important musée aéronautique de France. Fondé en 1919, il est le plus ancien et l'un des plus grands du monde."/>
+            desc="Le musée de l'Air et de l'Espace du Bourget est le plus important musée aéronautique de France. Fondé en 1919, il est le plus ancien et l'un des plus grands du monde."
+            lieu="Paris"
+            descr="balade"
+            loc="75001"
+            jour="02"
+            DDB={formattage("02", "13")}
+            DDF={formattage("02", "14")}
+            />
 
       <Card img={TFL} 
             alt="Image représentative la Tour Eiffel" 
@@ -23,6 +36,7 @@ function App() {
             alt="Image représentative l'Atelier des Lumières" 
             title="Atelier des Lumières" 
             desc="L’Atelier des Lumières est un centre d’art numérique situé au 38 rue Saint-Maur dans le 11ᵉ arrondissement de Paris. Créé par Culturespaces, il a ouvert ses portes le 13 avril 2018."/>
+      
       <Card/>
     </>
     

@@ -6,7 +6,7 @@
     margin: 10px;
     text-align: center;
     width: 250px;
-    height: 450px;
+    height: 545px;
     display: inline-block;
     vertical-align: top; /* Ajustement de l'alignement vertical */
 
@@ -20,14 +20,19 @@
   }
   
   .card .card-title{
+    height: 40px;
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 10px 0px 10px 0px;
     color: hsl(0, 0%, 20%);
   }
   
   .card .card-description{
     font-family: Arial, sans-serif;
     color: hsl(0, 0%, 30%);
-    max-height: 140px; /* Exemple de hauteur maximale */
+    height: 110px; /* Exemple de hauteur maximale */
     overflow: auto; /* Activer la scrollbar si nécessaire */
+  }
+  
+  .ical{
+    margin-top: 10px;
   }
